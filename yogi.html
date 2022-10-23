@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>yogi</title>
+    <link rel="stylesheet" href="style.css" />
+    <style>
+      * {
+        border-radius: 15px;
+      }
+      body {
+        background-image: linear-gradient(#16384c, rgb(47, 50, 95), #2f495f);
+        min-height: 650px;
+        display: flex;
+        flex-wrap: wrap;
+      }
+      img {
+        height: 300px;
+        width: 300px;
+        position: absolute;
+        left: 50px;
+        top: -30px;
+        transition: all 0.5s;
+      }
+      section {
+        background-color: #e1d2d2;
+        height: 350px;
+        width: 400px;
+        margin: 200px auto 0 auto;
+        position: relative;
+        transition: all 1s;
+      }
+      section:hover {
+        height: 400px;
+      }
+      .container {
+        position: absolute;
+        bottom: 0;
+        padding: 10px;
+        text-align: center;
+        opacity: 0;
+        transition: all 2.5s;
+      }
+      section:hover .container {
+        opacity: 1;
+      }
+      section:hover img {
+        top: -120px;
+        border-radius: 50%;
+        transform: rotate(720deg);
+      }
+      footer {
+        background-color: #16384c;
+        color: rgb(247, 243, 243);
+
+        padding: 14px;
+        height: 15px;
+        width: 100%;
+
+        margin-top: 210px;
+        text-align: center;
+      }
+    </style>
+  </head>
+  <body>
+    <section>
+      <img src="yogi/1kilo.jpg" alt="1 kilo dates" />
+      <div class="container">
+        <h1>Choclate dates-1kilo</h1>
+        <p>Fresh dates with chocolate - box 1 kg</p>
+        <h3>35$<button>Buy now</button></h3>
+        <p>
+          your favourite chocolate dates are back in a stock. incredibly soft
+          with a crispy layer of dark choclate
+        </p>
+      </div>
+    </section>
+
+    <section>
+      <img src="yogi/date.jpg" alt="" />
+      <div class="container">
+        <h1>Choclate dates-10pieces</h1>
+        <p>Fresh dates with chocolate - box 10 pieces</p>
+        <h3>5$<button>Buy now</button></h3>
+        <p>
+          10 dark gold nuggets in a golden sharebox.A delecious combination of
+          high-quality cocoa with a sweet creamy caramel taste
+        </p>
+      </div>
+    </section>
+
+    <section>
+      <img src="yogi/syrup.jpg" alt="" />
+      <div class="container">
+        <h1>date syrup</h1>
+        <p>Date syrup - bottle 250 gram</p>
+        <h3>3.5$<button>Buy now</button></h3>
+        <p>
+          This date syrup is the perfect natural sweetener,without any
+          additives.Delecious as sweetener for the pancake or smoothie
+        </p>
+      </div>
+    </section>
+    <footer>Developed and desigened by Eng:Essam Zayed</footer>
+  </body>
+</html>
